@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>CGPA Calculator Pro</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+
+</head>
+
+<body>
+
+<div class="container">
+
+
+<div class="top-bar">
+    <button id="themeToggle" class="theme-btn">
+        🌙 Dark Mode
+    </button>
+</div>
+
+<h1>🎓 CGPA Calculator Pro</h1>
+
+<p class="subtitle">
+    Calculate your CGPA, percentage and academic performance instantly.
+</p>
+
+<div id="subjects">
+
+    <div class="subject">
+
+        <input
+            type="text"
+            class="subject-name"
+            placeholder="Subject Name"
+        >
+
+        <input
+            type="number"
+            class="grade"
+            min="0"
+            max="10"
+            step="0.1"
+            placeholder="Grade Point"
+        >
+
+        <input
+            type="number"
+            class="credit"
+            min="1"
+            placeholder="Credits"
+        >
+
+        <button
+            type="button"
+            class="remove-btn"
+            onclick="removeSubject(this)"
+        >
+            ✕
+        </button>
+
+    </div>
+
+</div>
+
+<div class="button-group">
+
+    <button
+        class="add-btn"
+        onclick="addSubject()"
+    >
+        + Add Subject
+    </button>
+
+    <button
+        class="calculate-btn"
+        onclick="calculateCGPA()"
+    >
+        Calculate CGPA
+    </button>
+
+</div>
+
+<div id="result">
+
+    <div
+        class="result-value"
+        id="cgpaValue"
+    >
+        0.00
+    </div>
+
+    <div class="result-label">
+        Current CGPA
+    </div>
+
+    <div
+        id="percentageValue"
+        class="percentage"
+    >
+        Percentage: 0%
+    </div>
+
+    <div
+        id="gradeBadge"
+        class="grade-badge"
+    >
+        Not Calculated
+    </div>
+
+    <div
+        id="creditInfo"
+        class="credits"
+    >
+        Total Credits: 0
+    </div>
+
+</div>
+
+<button
+    class="download-btn"
+    onclick="downloadReport()"
+>
+    📄 Download Report PDF
+</button>
+
+<div class="info-card">
+
+    <h3>Developer Information</h3>
+
+    <p>
+     Built by
+Soumya Jagannath Jalihal
+    </p>
+
+    <p>
+      Contact:
+j.soumya2007@gmail.com
+    </p>
+
+</div>
+
+<a
+    href="https://digitalheroesco.com"
+    target="_blank"
+    class="digital-heroes-btn"
+>
+    Built for Digital Heroes
+</a>
+
+<footer>
+    © 2026 CGPA Calculator Pro • Built with HTML, CSS & JavaScript
+</footer>
+
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
