@@ -78,7 +78,7 @@ This project is deployed using Vercel.
 
 Soumya Jagannath Jalihal
 
-📧 Email: [j.soumya2007@gmail.com](mailto:j.soumya2007@gmail.com)
+📧 Email: [soumyajalihal064@gmail.com](mailto:soumyajalihal064@gmail.com)
 
 ## 🔗 Required Link
 
